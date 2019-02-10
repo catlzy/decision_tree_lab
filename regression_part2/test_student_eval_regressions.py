@@ -39,9 +39,9 @@ def main(col_names=None):
         with open(csv_file_name + ".json", "w") as write_file:
             json.dump(json_tree, write_file)
 
-    #4.0, 4.469
+    #4.5, 4.469
     print("course evaluation score ['tenured', 'not minority', 'male', 'english', 50, 30, 'lower', 5, 4] is: ", regression_tree.classify(['tenured', 'not minority', 'male', 'english', 50, 30, 'lower', 5, 4], tree))
-    #4.5, 4.600
+    #4.0, 4.248
     print("course evaluation score ['tenure track', 'not minority', 'female', 'english', 30, 30, 'upper', 6, 4] is: ", regression_tree.classify(['tenure track', 'not minority', 'female', 'english', 30, 30, 'upper', 6, 4], tree))
     #3.5, 3.446
     print("course evaluation score ['teaching', 'not minority', 'female', 'english', 40, 30, 'lower', 5, 3] is: ", regression_tree.classify(['teaching', 'not minority', 'female', 'english', 40, 30, 'lower', 5, 3], tree))
